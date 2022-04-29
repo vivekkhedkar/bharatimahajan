@@ -225,7 +225,7 @@ nav ul{
     position: absolute;
     top: -500%;
     /* transition: opacity 600ms ease-in-out, transform 600ms ease-in-out; */
-    transition:  opacity 600ms ease-in-out, transform 600ms ease-in-out;
+    transition:  opacity 300ms ease-in-out, transform  300ms ease-in-out;
     
 }
 
@@ -234,7 +234,7 @@ nav ul{
 opacity:1;
 transform: translateY(0);
 z-index:3;
-top:12%;
+top:6em;
 }
 
 
