@@ -106,6 +106,7 @@ nav ul{
     display: block;
     position:absolute;
     z-index: 2;
+    margin-right:2em;
 }
 
 
@@ -233,7 +234,7 @@ nav ul{
 opacity:1;
 transform: translateY(0);
 z-index:3;
-top:10%;
+top:12%;
 }
 
 
@@ -278,7 +279,7 @@ top:10%;
     text-decoration: none; 
     
     color:grey;
-    cursor: pointer;
+    /* cursor: pointer; */
     /* padding-top: 1em;
     padding-bottom: 1em; */
 }
@@ -331,6 +332,7 @@ top:10%;
     object-fit: cover;
     transition-property: all;
     transition-duration: 1s;
+    margin-left: 2em;
 
 }
 
@@ -625,6 +627,9 @@ Media queries
         margin: 0;
         width: 10%;
     }
+    .signature-logo{
+        margin-left: 0;
+    }
 
     .signature-logo.active{
         /* width: 50%; */
@@ -660,6 +665,9 @@ Media queries
         
     }
 
+    .nav-menu-link{
+        cursor: pointer;
+    }
     .nav-menu-work-dropdown{
         
         transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
