@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
-    const navMenuLink = document.querySelector('.nav-menu-link');
+    const navMenuDiv1Link = document.querySelector('.nav-menu-div1-link');
     const navMenuWork = document.querySelector('.nav-menu-work');
     // const navMenuWork = document.querySelector('.nav-menu-work');
     const navMenuWorkDropdown = document.querySelector('.nav-menu-work-dropdown');
@@ -21,16 +21,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
     
 
-    // This makes nav-menu-work-div to disappear when clicked outside of the menu only if screen width is greater than 770px
+    // This makes nav-menu-work-div to disappear when clicked outside of the menu only if screen width is greater than 770px.
+    // This needs to be done because otherwise "document.addEventListener('click' " event gets fired up everytime the phone screen gets touched
+    // which results into nave-menu-work-dropdown not loading. 
 
-    if (screen.width > 770) 
-    document.addEventListener('click', e =>{
+    if (screen.width > 770) {
+        document.addEventListener('click', e =>{
         
-        navMenuWorkDropdown.classList.remove('active');
-        navMenuDiv2.classList.remove('active');
-        workbar.classList.remove('active');
-          
-    })
+            navMenuWorkDropdown.classList.remove('active');
+            navMenuDiv2.classList.remove('active');
+            workbar.classList.remove('active'); 
+        })
+
+        navMenuDiv1Link.addEventListener("mouseover", ()=>{
+            console.log('navMenuDiv1Link mouseover');
+            navMenuWorkDropdown.classList.toggle('active');
+            navMenuDiv2.classList.toggle('active');
+            workbar.classList.toggle('active'); 
+        })
+    }
+    
 
     // navMenuLink.addEventListener("touchstart", e =>{
     //     console.log(e);
@@ -39,12 +49,19 @@ document.addEventListener('DOMContentLoaded', function(){
     //     workbar.classList.toggle('active'); 
     // })
 
-    navMenuLink.addEventListener("touchend", e =>{
+    navMenuDiv1Link.addEventListener("touchend", e =>{
         console.log(e);
         navMenuWorkDropdown.classList.toggle('active');
         navMenuDiv2.classList.toggle('active');
         workbar.classList.toggle('active'); 
     })
+
+    // navMenuWork.addEventListener("touchend", e =>{
+    //     console.log(e);
+    //     navMenuWorkDropdown.classList.toggle('active');
+    //     navMenuDiv2.classList.toggle('active');
+    //     workbar.classList.toggle('active'); 
+    // })
 
     hamburger.addEventListener("click",()=>{
         console.log('hamburger clicked');
@@ -55,12 +72,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
    
 
-    navMenuLink.addEventListener("mouseover", ()=>{
-        console.log('navMenuLink mouseover');
-        navMenuWorkDropdown.classList.toggle('active');
-        navMenuDiv2.classList.toggle('active');
-        workbar.classList.toggle('active'); 
-    })
+   
+
+
+    // navMenuWork.addEventListener("mouseover", ()=>{
+    //     console.log('navMenuDiv1Link mouseover');
+    //     navMenuWorkDropdown.classList.toggle('active');
+    //     navMenuDiv2.classList.toggle('active');
+    //     workbar.classList.toggle('active'); 
+    // })
 
     // navMenuLink.addEventListener("click", ()=>{
     //     console.log('navMenuLink clicked');
