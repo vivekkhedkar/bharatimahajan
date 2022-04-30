@@ -278,7 +278,7 @@ left:2em;
 
 .nav-menu-div1-link{
     text-decoration: none; 
-    padding:1.5em;
+    padding:1.5em 2em;
     color:grey;
     
 }
@@ -346,7 +346,7 @@ left:2em;
     /* width: 50%; */
     
     height: 2em;
-    padding:0;
+    padding:0 0 0 1em;
     margin:0;
     /* object-fit: contain; */
     /* transition: 0.8s; */
