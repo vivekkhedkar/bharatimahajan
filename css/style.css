@@ -606,8 +606,9 @@ iframe{
 /* Brand Guide*/
 .main-title-brand-guide{
     margin: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 
