@@ -44,7 +44,7 @@ strong{
 
 header{
     /* background:#f8f8f8; */
-    padding-top: 2em;
+    padding-top: 0.5em;
     height: 10%;
     margin-bottom: 2em; 
     position: fixed;
@@ -60,7 +60,7 @@ header{
     max-width: 1000px;
     /* width: 100%; */
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 0.5em;
     /* background-color: antiquewhite; */
     position: relative;  
 }
@@ -72,7 +72,7 @@ header{
     
     margin: auto;
     
-    padding: 0 2em;
+    padding: 1em 1em;
     /* background-color: antiquewhite; */
     position: relative; 
     
@@ -181,21 +181,29 @@ nav ul{
     
 }
 
-.nav-menu-div2-li
+/* .nav-menu-div2-li
 {
     margin: 2.5em 2em;
-    /* padding-left: 1.5em; */
     padding-bottom: 3em;
-    /* width: 100%; */
     border-bottom: 1px solid gray;
     color:grey;
     list-style: none;
+} */
 
+.nav-menu-div2-li
+{
+    margin: 1.5em 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid gray;
+    color:grey;
+    list-style: none;
 }
+
+
 
 .nav-menu-div2-li:nth-child(1){
     border-top: 1px solid gray;
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 .nav-menu-work{
@@ -383,12 +391,18 @@ left:2em;
        display: flex;
        flex-direction: row-reverse;
        position:absolute;
-       top:40em;
+       top:30em;
        left:-3em;
-       
-   } 
+       transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;  
+   }
+   
+    .social-media-logo-div.active{
+    
+        transform: translateY(15em);
+        transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;   
+    }
 
-
+   
 footer{
     text-align: center;
     padding: 3em;
@@ -670,7 +684,17 @@ Media queries
 
     header{
         background:white;
+        padding-top: 2em;
+        
           
+    }
+
+    .container{
+        padding: 0 2em; 
+    }
+
+    .container-header{
+        padding: 0 2em;
     }
 
      .b-logo{

@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const thirtysixDaysDiv1Img = document.querySelector('.thirtysix-days-div1');
     const thirtysixDaysDiv2Img = document.querySelector('.thirtysix-days-div2');
+    const socialMediaLogoDiv = document.querySelector('.social-media-logo-div');
 
     
 
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
         navMenuWorkDropdown.classList.toggle('active');
         navMenuDiv2.classList.toggle('active');
         workbar.classList.toggle('active'); 
+        socialMediaLogoDiv.classList.toggle('active');
     })
 
     // navMenuWork.addEventListener("touchend", e =>{
