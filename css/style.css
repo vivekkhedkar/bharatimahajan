@@ -8,8 +8,13 @@ html,body{
     font-family: "Work Sans";
 }
 
+a{
+    text-decoration: none;
+}
+
 img{
     max-width: 100%;
+    border:1px solid gray;
 }
 
 /* Typography*/
@@ -165,7 +170,7 @@ nav ul{
 
 .nav-menu-div2{
     position: absolute;
-    top: 6.5em;
+    top: 7.5em;
     width: 90%;
     transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
 }
@@ -178,9 +183,9 @@ nav ul{
 
 .nav-menu-div2-li
 {
-    margin: 2em 1.5em;
+    margin: 2.5em 2em;
     /* padding-left: 1.5em; */
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     /* width: 100%; */
     border-bottom: 1px solid gray;
     color:grey;
@@ -190,11 +195,12 @@ nav ul{
 
 .nav-menu-div2-li:nth-child(1){
     border-top: 1px solid gray;
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .nav-menu-work{
     z-index: -1;
+    width:12em;
     /* position: relative; */
    
     /* padding:1.5em; */
@@ -278,7 +284,7 @@ left:2em;
 
 .nav-menu-div1-link{
     text-decoration: none; 
-    padding:1.5em 2em;
+    padding:1em 2em;
     color:grey;
     
 }
@@ -377,7 +383,9 @@ left:2em;
        display: flex;
        flex-direction: row-reverse;
        position:absolute;
-       right:0;
+       top:40em;
+       left:-3em;
+       
    } 
 
 
@@ -560,6 +568,14 @@ footer{
 
 .img-flex-div-overlay-title{
     text-align: center;
+    text-decoration: none;
+    
+    color:gray
+}
+
+.img-flex-div-overlay-subtitle{
+    text-decoration: none;
+    color: gray;
 }
 
 .img-flex-div-overlay-link{
@@ -702,6 +718,7 @@ Media queries
     .nav-menu-work{
         margin:0;
         padding:0;
+        height: 2em;
     }
     .nav-menu-work-dropdown{
         
@@ -720,7 +737,7 @@ Media queries
         display: flex;
         position:absolute;
         left:7em;
-        top: 0em;
+        top: 0;
         /* width: 90%; */
         /* min-width:500px; */
     }
@@ -747,6 +764,15 @@ Media queries
 
     .link-button-div{
         width:20em;
+    }
+
+    .social-media-logo-div{
+        margin: 0;
+        top:0;
+       left:45em;
+        width:12em;
+        /* width: 20%; */
+        
     }
 
     /* .nav-menu-div2-li:nth-child(2){
@@ -869,11 +895,14 @@ Media queries
     opacity: 4;
     margin-top: 20%;
     text-align: center;
+    color:white;
    }
 
    .img-flex-div-overlay-subtitle{
        margin:0;
        padding: 0;
+       text-decoration: none;
+       color:white;
    }
 
   
