@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const thirtysixDaysDiv1Img = document.querySelector('.thirtysix-days-div1');
     const thirtysixDaysDiv2Img = document.querySelector('.thirtysix-days-div2');
     const socialMediaLogoDiv = document.querySelector('.social-media-logo-div');
+    
+    
 
     
 
@@ -24,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // This makes nav-menu-work-div to disappear when clicked outside of the menu only if screen width is greater than 770px.
     // This needs to be done because otherwise "document.addEventListener('click' " event gets fired up everytime the phone screen gets touched
-    // which results into nave-menu-work-dropdown not loading. 
+    // which results into nave-menu-work-dropdown not loading.
+    
+    
 
     if (screen.width > 770) {
         document.addEventListener('click', e =>{
@@ -65,10 +69,15 @@ document.addEventListener('DOMContentLoaded', function(){
     //     workbar.classList.toggle('active'); 
     // })
 
+
+
     hamburger.addEventListener("click",()=>{
         console.log('hamburger clicked');
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        
+
         
     })
 

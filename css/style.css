@@ -65,6 +65,8 @@ header{
     position: relative;  
 }
 
+
+
 .container-header{
     max-width: 1000px;
     
@@ -72,7 +74,8 @@ header{
     
     margin: auto;
     
-    padding: 1em 1em;
+    /* padding: 1em 1em; */
+    padding: 1em 0.5em;
     /* background-color: antiquewhite; */
     position: relative; 
     
@@ -82,6 +85,8 @@ header{
     margin-top: 8em;
     
 }
+
+
 
 .container-ul{
     
@@ -140,7 +145,7 @@ nav ul{
     flex-direction: column;
     position:absolute; 
     left:-50%;
-    width: 50%;
+    width: 100%;
     color:grey;
     text-align:left;
     transition: 0.5s; 
@@ -237,7 +242,7 @@ nav ul{
     opacity:0;
     position: absolute;
     top: -500%;
-    transition:  opacity 300ms ease-in-out, transform  300ms ease-in-out;
+    transition:  opacity 600ms ease-in-out, transform  600ms ease-in-out;
     
 }
 
@@ -248,8 +253,10 @@ transform: translateY(0);
 z-index:3;
 margin-top:0;
 padding-top:0;
+width:11em;
 top:7.5em;
-left:2em;
+left:3em;
+transition:  opacity 600ms ease-in-out, transform  600ms ease-in-out;
 }
 
 
@@ -453,7 +460,7 @@ footer{
 }
 
 .main-title{
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding: 0;
     margin-left:auto;
@@ -564,25 +571,7 @@ footer{
     flex-basis: 100% ;
 }
 
-.kiosk-main-img{
-    border: 2px solid gray;
-}
 
-
-/* .img-flex-div-overlay{
-    position: absolute;
-    top:0.5em;
-    left:0.5em;
-    width: 100%;
-    height: 94%;
-    background: black;
-    color: white;
-    text-align: center;
-    opacity: 0;   
-    transition: 0.25s ease-in-out;
-    cursor: pointer;
-    
-} */
 
 .img-flex-div-overlay-title{
     text-align: center;
@@ -612,7 +601,6 @@ iframe{
 
 .iframe-video{
     width: 100%;
-    /* height: 23em; */
     border: none;
     
 }
@@ -638,11 +626,7 @@ iframe{
   }
 
   .swiper-pagination{
-      /* background: rgb(50, 94, 153); */
-      /* width: 50px;
-      height: 50px; */
-      /* background: white; */
-      /* background-color: aqua; */
+      
       color:#3d035b;
       
       
@@ -651,9 +635,7 @@ iframe{
       
   }
 
-  /* .swiper-pagination-bullet{
-      color:#3d035b;
-  } */
+  
 
   .swiper-pagination-bullet-active {
     background-color: rgb(255, 255, 255) !important;
@@ -759,10 +741,15 @@ Media queries
         
     }
 
+    .main-title{
+        font-size:4em;
+    }
+
     .nav-menu-work-dropdown.active{
         
         top:2.75em;
         left:1em;
+        width:15%;
         }
     
 
