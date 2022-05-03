@@ -358,13 +358,10 @@ background-color: white;
 }
 
 .signature-logo.active{
-    /* width: 50%; */
     
     height: 2em;
     padding:0 0 0 1em;
     margin:0;
-    /* object-fit: contain; */
-    /* transition: 0.8s; */
     transform: translateX(-30%);
 }
 
@@ -375,9 +372,6 @@ background-color: white;
 
 .linkedin-logo{
     
-    /* width: 2em; */
-    /* margin-right: 1em; */
-    /* margin-left: 40%; */
     width:15%;
     margin-left:1em;
     
@@ -449,6 +443,12 @@ footer{
     font-size: 2rem;
     font-weight: 700;
     color: #3d035b;
+}
+
+.link-button-div-about{
+    text-align: center;
+    
+    margin: 2em 0;
 }
 
 .main{
@@ -576,7 +576,9 @@ footer{
     text-align: center;
     text-decoration: none;
     
-    color:gray
+    color:gray;
+    font-weight: 700;
+    
 }
 
 .img-flex-div-overlay-subtitle{
@@ -783,7 +785,15 @@ Media queries
 
     .link-button-div{
         width:20em;
+        margin:2em auto;
+        
     }
+
+    .link-button-div-about{
+        width:20em;
+        margin:2em 0;
+    }
+    
 
     .social-media-logo-div{
         margin: 0;
