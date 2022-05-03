@@ -225,6 +225,7 @@ nav ul{
 .nav-menu-work-li:hover{
     background-color: #3d035a;
     color: white;
+    width:7em;
     
    
 }
@@ -741,6 +742,14 @@ Media queries
         transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
         
     }
+
+    
+.nav-menu-work-li:hover{
+    
+    width:100%;
+    
+   
+}
 
     .main-title{
         font-size:4em;
